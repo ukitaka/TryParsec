@@ -15,19 +15,10 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/**/*.swift'
   s.dependency 'Result', '~> 1.0'
 
-  #
-  # Comment-Out:
-  # Conflicts with Swift-Package-Manager's source-layout,
-  # which creates multiple libraries from multiple subdirectories.
-  #
-  # See also:
-  # https://github.com/apple/swift-package-manager/blob/master/Documentation/SourceLayouts.md
-  #
-
-  # s.subspec "Core" do |ss|
-  #   ss.source_files = 'Sources/*.swift', 'Sources/Base/*.swift'
-  #   ss.dependency 'Result', '~> 1.0'
-  # end
+  s.subspec "Core" do |ss|
+    ss.source_files = 'Sources/*.swift', 'Sources/Base/*.swift'
+    ss.dependency 'Result', '~> 1.0'
+  end
 
   # s.subspec "Arithmetic" do |ss|
   #   ss.source_files = 'Sources/Arithmetic/*.swift'
