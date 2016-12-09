@@ -12,10 +12,10 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/**/*.swift'
   s.dependency 'Result', '~> 3.0'
 
-  s.subspec "Core" do |ss|
-    ss.source_files = 'Sources/*.swift', 'Sources/Base/*.swift'
-    ss.dependency 'Result', '~> 3.0'
-  end
+  # s.subspec "Core" do |ss|
+  #  ss.source_files = 'Sources/*.swift', 'Sources/Base/*.swift'
+  #  ss.dependency 'Result', '~> 3.0'
+  # end
 
   # s.subspec "Arithmetic" do |ss|
   #   ss.source_files = 'Sources/Arithmetic/*.swift'
