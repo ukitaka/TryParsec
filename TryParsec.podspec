@@ -7,17 +7,14 @@ Pod::Spec.new do |s|
   s.summary  = 'Monadic parser combinator for try! Swift.'
   s.source   = { :git => 'https://github.com/inamiy/TryParsec.git', :tag => "#{s.version}" }
 
-  s.osx.deployment_target = '10.9'
-  s.ios.deployment_target = '8.0'
-  s.watchos.deployment_target = '2.0'
-  s.tvos.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'Sources/**/*.swift'
-  s.dependency 'Result', '~> 1.0'
+  s.dependency 'Result', '~> 3.0'
 
   s.subspec "Core" do |ss|
     ss.source_files = 'Sources/*.swift', 'Sources/Base/*.swift'
-    ss.dependency 'Result', '~> 1.0'
+    ss.dependency 'Result', '~> 3.0'
   end
 
   # s.subspec "Arithmetic" do |ss|
